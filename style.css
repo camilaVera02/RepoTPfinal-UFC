@@ -1,0 +1,285 @@
+/* Reseteo básico para el ejemplo */
+* {
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', -apple-system, Roboto, sans-serif; /* Tipografía limpia estilo ML */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+body {
+  background-color: #000000; /* El clásico fondo gris claro de Mercado Libre */
+}
+nav{
+  padding: 10px 30px 10px 30px;
+  background-color: #5d350a;
+}
+
+.nav-item{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+a.nav-link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+body {
+  background-color: #EADDCA; /* El clásico fondo gris claro de Mercado Libre */
+}
+
+/* Estilos para el Título de la sección */
+.title-categorias {
+  text-align: left;
+  color: #3e2723; /* Marrón oscuro para mantener la paleta */
+  font-weight: bold;
+  margin-top: 50px; /* Separación con lo de arriba */
+  margin-bottom: 20px; /* Separación con las tarjetas */
+}
+
+/* Contenedor de las tarjetas de resumen */
+.resumenes-container {
+  display: grid;
+  /* Aumentamos de 300px a 450px para hacer las tarjetas más grandes y anchas */
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px; 
+  padding: 20px; 
+  justify-content: center;
+  align-items: start; 
+}
+
+/* Contenedor principal del resumen (Tarjeta estática) */
+.item-resumen {
+  background-color: #dfc589; /* Fondo blanco puro para resaltar */
+  border: 1px solid #d7ccc8; /* Borde sutil en tono tierra claro */
+  border-radius: 12px; 
+  padding: 25px 20px; /* Margen interno para que el iframe no toque los bordes */
+  box-shadow: 0 4px 10px rgba(121, 85, 72, 0.08); /* Sombra fija para separar del fondo de la página */
+  
+  /* Flexbox para alinear título e iframe al centro */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+/* Título de la tarjeta */
+.item-resumen h3 {
+  color: #3e2723; /* Marrón oscuro */
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.resumen-iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 800px; 
+  margin: 0 auto; 
+  border: 2px solid #cfa169; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(78, 52, 46, 0.1); 
+  box-sizing: border-box;
+  gap: 10px¿;
+}
+.videos-container {
+  padding-bottom: 80px;
+}
+
+
+
+/* Contenedor en Grid para que sea responsivo */
+.categoria-container {
+  padding-top: 20px;
+  background-color: #EADDCA;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo de la Card / Botón Gigante */
+.tarjeta-categoria {
+  background-color: #C19A6B;
+  border-radius: 6px; /* Bordes ligeramente redondeados */
+  padding: 24px 16px;
+  text-align: center;
+  text-decoration: none; /* Quitamos el subrayado de enlace */
+  color: #ffffff; /* Texto oscuro pero no negro puro */
+  
+  /* Flexbox interno para alinear todo verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  
+  /* El secreto: la sombra inicial y la transición */
+  border: 1px solid #e6e6e6; /* Línea divisoria muy tenue */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* Contenedor del icono */
+.icono-card {
+  font-size: 4.5rem;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%; /* Iconos circulares */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+h1{
+  padding: 23px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+/* Título de la materia */
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+/* Texto de acción (estilo enlace azul de Mercado Libre) */
+
+/* ==========================================
+   EL EFECTO HOVER (Magia de Mercado Libre)
+   ========================================== */
+.tarjeta-categoria:hover {
+  /* Elevamos la tarjeta cambiando la sombra y quitando el borde rígido */
+  border-color: transparent;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+  
+  /* Un ligero empujón hacia arriba para dar sensación de botón flotante */
+  transform: translateY(-4px); 
+}
+
+   .carrusel-contenedor {
+      max-width: 1000px; /* Aumentado: grande pero sin ocupar toda la pantalla */
+      margin: 0 auto;   
+    }
+    
+    .carousel-item img {
+      height: 500px; /* Aumentado: altura ideal para destacar las imágenes */
+      object-fit: cover; /* Evita que las imágenes se estiren o deformen */
+      border-radius: 12px; 
+    }
+
+/* ----- ESTILOS DE LAS TARJETAS (CARDS) ----- */
+    .tarjeta-categoria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px; 
+        padding: 30px 20px;
+        text-decoration: none;
+        color: #4e342e; 
+        background-color: #ffffff;
+        border: 1px solid #d7ccc8; 
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(121, 85, 72, 0.08); 
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .tarjeta-categoria:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 15px rgba(121, 85, 72, 0.15); 
+        border-color: #8d6e63; 
+        color: #795548; 
+    }
+
+    .icono-card span {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #8b5a2b; 
+    }
+
+    .tarjeta-categoria h2 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+
+.titulo-materia {
+  text-align: center;
+  color: #3e2723; /* Marrón oscuro para mantener la paleta */
+  font-weight: bold;
+  margin-top: 20px; /* Separación con lo de arriba */
+  margin-bottom: 20px; /* Separación con las tarjetas */
+  font-size: 4.5rem;
+}
+
+/* Controles de tamaño del contenedor general */
+.contenedor-bibliografia {
+  max-width: 900px; /* Limita el ancho para que no se estire de borde a borde */
+  margin: 0 auto;   /* Centra la lista en la pantalla */
+  padding: 0 20px;
+}
+
+/* Hacer las tarjetas de la lista más grandes y con colores marrones */
+.list-group-bibliografia .list-group-item {
+  padding: 25px 30px; /* Aumenta drásticamente el espacio interior */
+  border-color: #d7ccc8; /* Borde marrón clarito */
+  background-color: #ffffff;
+  color: #4e342e; /* Texto en marrón oscuro */
+}
+
+/* Modificar el elemento "Activo" para quitar el azul de Bootstrap */
+.list-group-bibliografia .list-group-item.active {
+  background-color: #795548; /* Fondo marrón para el elemento destacado */
+  border-color: #795548;
+  color: #ffffff;
+}
+
+/* Aumentar el tamaño de los títulos dentro de la lista */
+.list-group-bibliografia .list-group-item h5 {
+  font-size: 1.5rem; /* Título más grande */
+  font-weight: 600;
+  color: inherit; /* Hereda el color según si está activo o no */
+}
+
+/* Aumentar el tamaño de los párrafos */
+.list-group-bibliografia .list-group-item p {
+  font-size: 1.1rem; /* Párrafo más grande y legible */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Ajustar el tamaño de la letra pequeña */
+.list-group-bibliografia .list-group-item small {
+  font-size: 0.95rem; /* Un poco más grande que el estándar */
+}
+
+/* Modificar colores del texto muted para que combine con el marrón */
+.list-group-bibliografia .text-muted {
+  color: #8d6e63 !important; /* Sobrescribe el gris de Bootstrap por un marrón grisáceo */
+}
+
+.btn-volver-arriba{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5d350a;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
