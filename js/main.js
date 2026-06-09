@@ -1,6 +1,6 @@
 // main.js
 
-// 1. Consulta GraphQL exacta según typeDefs
+// 1. Consulta GraphQL exacta según tus typeDefs
 const QUERY_MATERIAS = `
   query {
     materias {
