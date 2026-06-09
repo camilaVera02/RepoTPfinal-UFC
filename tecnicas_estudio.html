@@ -9,21 +9,29 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link"href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active"  aria-current="page" href="tecnicas_estudio.html">Tecnicas de estudio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="ia.html">IA</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="notas.html">Notas</a>
-            </li>
-        </ul> 
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tecnicas_estudio.html">Técnicas de estudio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ia.html">IA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notas.html">Notas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
        <div class="categoria-container">
     <a href="" class="tarjeta-categoria"  name ="Base de datos"> 
@@ -49,6 +57,6 @@
 
     <!-- Añadir más tarjetas con JS -->
    </div>
-    
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
